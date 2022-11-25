@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPessoaFF12\\CadastroPessoaFF12.csproj": {}
+    "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPJPF\\CadastroPessoaFF12.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPessoaFF12\\CadastroPessoaFF12.csproj": {
+    "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPJPF\\CadastroPessoaFF12.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPessoaFF12\\CadastroPessoaFF12.csproj",
+        "projectUniqueName": "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPJPF\\CadastroPessoaFF12.csproj",
         "projectName": "CadastroPessoaFF12",
-        "projectPath": "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPessoaFF12\\CadastroPessoaFF12.csproj",
+        "projectPath": "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPJPF\\CadastroPessoaFF12.csproj",
         "packagesPath": "C:\\Users\\Rosinei Cavalcanti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPessoaFF12\\obj\\",
+        "outputPath": "C:\\Users\\Rosinei Cavalcanti\\OneDrive\\Área de Trabalho\\CadastroPJPF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rosinei Cavalcanti\\AppData\\Roaming\\NuGet\\NuGet.Config"
