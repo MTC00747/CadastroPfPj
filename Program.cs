@@ -3,7 +3,7 @@
 
 
 
-Endereco endfpf1 = new Endereco();// Instanciando Classe endereço 
+Endereco endfpf1 = new Endereco();// Instanciando Classe endereço New Endereço()
 endfpf1.Logradouro = "Endereço 1";
 endfpf1.Numero = 47;
 endfpf1.Comercial = false;
