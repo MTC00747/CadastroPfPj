@@ -15,15 +15,17 @@ PessoaFisica MetodosPf =  new PessoaFisica();// Instanciando um obejto para cham
 pf1.Nome ="Matheus"; //declara o valor do objeto 
 pf1.Cpf = "1111.1111.111-21";//declara o valor do objeto(Atributo )
 pf1.DataNascimento = new DateTime(2000,05,14);
-pf1.Rendimento= 1111;
+pf1.Rendimento= 1499.99f;
 pf1.Endereco = endfpf1;// Indicando que endereço  é igual a instanacia e endpf1 da classe Endereco
 
 
-
+// Exibição dos dados\\
 Console.WriteLine($"Nome: {pf1.Nome}");// objetos e seus valores
 Console.WriteLine($"CPF: {pf1.Cpf}");// objetos e seus valores
 Console.WriteLine($"Data de nascimento: {pf1.DataNascimento}");// objetos e seus valores
-Console.WriteLine($"Rendimento: {pf1.Rendimento}");// objetos e seus valores
+Console.WriteLine($"Rendimento: {pf1.Rendimento}");
+Console.WriteLine($"Rendimento liquido: {MetodosPf.PagarImposto(pf1.Rendimento)}");//Rendimento liquido
+// objetos e seus valores
 Console.WriteLine($"Logradouro: {pf1.Endereco.Logradouro}");// objetos e seus valores
 Console.WriteLine($"Número: {pf1.Endereco.Numero}");// objetos e seus valores
 Console.WriteLine($"Endereço comercial ? {pf1.Endereco.Comercial}");// objetos e seus valores
@@ -53,7 +55,7 @@ PessoaJuridica MetodosPj = new PessoaJuridica(); // Instanciando um obejto para 
 
 novaPj.Nome = "Matheus Cavalcanti";
 novaPj.Endereco = endPj;
-novaPj.Rendimento = 1000;
+novaPj.Rendimento = 6500;
 novaPj.Cnpj = "02.023.134/0001-31";
 // novaPj.Cnpj = "020231340001331";
 novaPj.RazaoSocial = "Matheus Soluções LTDA";
@@ -72,6 +74,7 @@ Nome Fantasia : {novaPj.NomeFantasia}
 Representante : {novaPj.Nome}
 CNPJ é Válido? : {MetodosPj.ValidarCnpj(novaPj.Cnpj)} 
 Redimento Anual  : {novaPj.Rendimento}
+Redimento Liquido   : {MetodosPj.PagarImposto(novaPj.Rendimento)}
 Endereço : {novaPj.Endereco.Logradouro}
 Número : {novaPj.Endereco.Numero}
 É comercial ? {novaPj.Endereco.Comercial}

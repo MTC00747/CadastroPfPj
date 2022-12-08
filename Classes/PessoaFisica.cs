@@ -25,7 +25,20 @@ namespace CadastroPessoaFF12.Classes
         public override float PagarImposto(float rendimento)
 
         {
-            throw new NotImplementedException();
+            if (rendimento <= 1500)//Isento
+            {
+                return rendimento;
+            }
+            else if (rendimento <= 5000)
+            { //3% de denconto
+                return rendimento -  (rendimento / 100) * 3;
+            }else
+            { //Desconto de 5%
+                return rendimento -  (rendimento / 100)* 5;
+            }
+            //Rendimento até 1500,00 isento(0%)Desconto
+            //para rendimento entre 15001,00 - 5000,00 (3%)Desconto
+            //para rendimento acima de 5000,01 (5%)Desconto
         }
         public bool ValidarDataNascimento(DateTime dataNasc)
         {

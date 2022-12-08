@@ -11,7 +11,7 @@ namespace CadastroPessoaFF12.Classes
     {
         public string? Nome {get; set;}
         public Endereco? Endereco {get; set;}
-        public float? Rendimento  {get; set;}
+        public float Rendimento  {get; set;}
 
         //Método abstrato podendo ser aplciado ao polimorfismo quando o métido for herdado de maneira obrigatória nas subclasses
         
