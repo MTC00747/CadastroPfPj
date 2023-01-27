@@ -20,6 +20,8 @@ namespace CadastroPessoaFF12.Classes
         public string? Cpf { get; set; }
         public DateTime DataNascimento { get; set; }
 
+        public string Caminho { get; private set; } = "Database/PessoaFisica.csv";
+
         //Conceito de "OVERRIDE" Vem do fato de o pagamento ser de maneira difereten , Ex: IRpf de 3% para PF E 10% PJ
         // Aqui podemos aplciar o conceito de polimorfismo
         public override float PagarImposto(float rendimento)
@@ -72,6 +74,36 @@ namespace CadastroPessoaFF12.Classes
             }
             return false;
 
+        }
+
+        public void Inserir(PessoaFisica pf)
+        {
+            Utils.VerificarPastaArquivo(Caminho);
+            //Criando uma sleção de dados string 
+            string[] PfValores = {$"{pf.Nome},{pf.Cpf},{pf.Rendimento}"};
+            File.AppendAllLines(Caminho, PfValores);
+
+        }
+
+        public List<PessoaFisica> LerArquivo()
+        {
+            List<PessoaFisica> ListaPf =  new List<PessoaFisica>();
+
+            string[] Linhas = File.ReadAllLines(Caminho);
+
+            /// nome , cpf e  rendimento
+            foreach (string CadaLinha in Linhas)
+            {
+                string [] atributo = CadaLinha.Split(",");
+                PessoaFisica novaPf = new PessoaFisica();
+
+                novaPf.Nome = atributo[0];
+                novaPf.Cpf = atributo[1];
+            
+                
+                ListaPf.Add(novaPf);
+            }
+            return ListaPf;
         }
     }
 }

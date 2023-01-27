@@ -25,6 +25,28 @@ namespace  CadastroPessoaFF12.Classes
             Console.WriteLine($"");//Quebra de linha
             Console.WriteLine($"Tecle <Enter> Para continuar");
             Console.ReadLine();
+        
+        }
+
+        //Caminho é public string Caminho { get; private set; } = "Database/PessoaFisica.csv";
+        public static void VerificarPastaArquivo(string Caminho)
+        {
+            string pasta =  Caminho.Split("/")[0]; //Divide a string em um array separado por " / "
+
+            //Validação de diretório, se a pastar não existir 
+            if (!Directory.Exists(pasta))
+            {
+                //Criar pasta
+                Directory.CreateDirectory(pasta);
+            }
+
+            if (!File.Exists(Caminho))
+            {
+                using(File.Create(Caminho)){}
+                
+            }
         }
     }
+
+    
 }
