@@ -1,4 +1,4 @@
-#README
+# README
 # Cadastro de Pessoas Físicas E Juridicas 
 
 ## **Descrição :**
@@ -56,4 +56,8 @@
 *  Não ter .NET instalado
 *  Não estar no diretŕoio correto 
 *  Estar executando o comando errado Terminal 
+
+## **Contribuites :**
+
+## Matheus Tavares cavalcanti & Senai
 
